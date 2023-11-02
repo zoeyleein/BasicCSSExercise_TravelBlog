@@ -1,0 +1,143 @@
+/*
+Name: JingYi Li
+*/
+
+/* reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin:0;
+    padding:0;
+}
+
+/* Apply style to the body element */
+body {
+    font-family: sans-serif; /* choose a sans-serif font for the webpage */
+    line-height: 1.6; /* the line height of the text */
+    background-color: #f0f0f0;
+    color: #333
+}
+
+/* Style the header element (Welcome to traval blog) */
+body > header {
+    background-color: #60594d;
+    color: #fff;
+    padding:1rem 0; /* padding of 1rem vertically and 0 horizontally */
+    text-align: center;
+}
+
+/* dobule the font size of h1 inside the header */
+body > header > h1 {
+    font-size: 2em; /* 2 times the size of the current font */
+}
+
+/* styles for navigation menu (Home Destinations About Us Contact) */
+header > nav > ul > li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none; /* Remove text deco from links */
+    list-style: none; /* Remove list bullets */
+    font-weight: bold;
+    color: #fff;
+}
+
+header > nav > ul > li > a:hover {
+    color: #ddd78d;
+}
+
+/* extra work: to style the section */
+section {
+    line-height: 20px;
+}
+
+/* extra work: to style ul inside of section */
+section > ul {
+    list-style: none; /* Remove the bullet points */
+}
+
+/* extra work: to style the hyperlinks inside the ul */
+section > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal; /* Set font weight to normal to remove bold style */
+    line-height: 40px;
+}
+
+section > ul > li > a:hover {
+    color:#b5885b;
+}
+
+/* style for the main element (Exploring the Amazon Rainforest) */
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* 0 is the top and bottem (vertical). auto sets the right and left (horizontally) */
+    /* auto is used to distribute any available space evenly */
+    padding: 2rem; /* the top and the bottlem */ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* style for the article element */
+article {
+    width: 70%;
+}
+
+article > img {
+    width: 20%;
+}
+
+/* style for the aside element (Newsletter) */
+aside {
+    width: 50%;
+    background-color: #93a29b;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem /* 1em = 12pt = 16px = 100% */
+}
+
+/* style for labels inside aside */
+aside > form > label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* style for the element with ID email */
+aside > form > #email {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+/* style for the element with ID send */
+aside > form > #send {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem; /* 1 vertically and 0.5 horizontally */
+}
+
+aside > form > #send:hover {
+    cursor: pointer;
+}
+
+
+/* style for the footer element */
+footer {
+    background-color: #ddd78d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0; /* padding of 1rem vertically and 0 horizontally */
+}
+
+/* media query for screens 768px or less */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; /* to laid out in a column */
+        margin: auto;
+        flex-basis: auto;
+        width:100%
+    }
+
+}
